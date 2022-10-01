@@ -145,3 +145,6 @@ body{
     }
   
   }
+.compare{
+  visibility: hidden;
+}

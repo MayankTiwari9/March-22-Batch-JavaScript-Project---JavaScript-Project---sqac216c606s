@@ -8,8 +8,8 @@ const uniqueCountry = ["Ivory Coast", "Ghana", "Ethiopia", "Algeria", "Eritrea",
 
 var timeZone1 = [];
 var timeZone2 = []
-let moretime2 = document.getElementById('more-time2');
 let moretime1 = document.getElementById('more-time1');
+let moretime2 = document.getElementById('more-time2');
 const input1 = document.getElementById('input1');
 const input2 = document.getElementById('input2');
 const error1 = document.getElementById('error1');
@@ -211,12 +211,12 @@ function hanldeInput2() {
 }
 
 
-// checked.addEventListener("click", function () {
-//     if (checked.checked) {
-//         document.querySelector('.date').disabled = false;
-//         document.querySelector('.time').disabled = false;
-//     } else {
-//         document.querySelector('.date').disabled = true;
-//         document.querySelector('.time').disabled = true;
-//     }
-// })
+checked.addEventListener("click", function () {
+    if (checked.checked) {
+        document.querySelector('.date').disabled = false;
+        document.querySelector('.time').disabled = false;
+    } else {
+        document.querySelector('.date').disabled = true;
+        document.querySelector('.time').disabled = true;
+    }
+})
