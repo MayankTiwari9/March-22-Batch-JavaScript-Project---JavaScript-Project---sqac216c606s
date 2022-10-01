@@ -1,1 +1,61 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
 
+<head>
+  <meta charset="utf-8" />
+  <title>Time Zone Calculator</title>
+  <link rel="icon" type="image/x-icon" href="earth.png">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500&family=Roboto+Serif:opsz,wght@8..144,700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <div class="root">
+    <div class="heading">
+      <h1 class="heading-text">Time Zone Calculator</h1>
+    </div>
+    <div class="container">
+      <div class="main-container">
+        <div class="first-input">
+          <label>From <span>(country)</span> </label>
+          <div class="first-input-field">
+            <input class="input-field" type="text" list="list" onchange="hanldeInput1()" id="input1" placeholder="Enter Country Name" />
+            <select class="select-field" id="more-time1"></select>
+            <br />
+            <p class="error" id="error1">Enter Valid Input</p>
+          </div>
+        </div>
+        <div class="second-input">
+          <label>To <span>(country)</span></label>
+          <div class="second-input-field">
+            <input class="input-field" type="text" list="list" onchange="hanldeInput2()" id="input2" placeholder="Enter Country Name"/>
+            <select class="select-field" id="more-time2"></select>
+            <br />
+            <p class="error" id="error2">Enter Valid Input</p>
+          </div>
+        </div>
+
+        <datalist id="list"> </datalist>
+
+        <!-- <span>If you like to compare with actual time : </span>
+        <input type="checkbox" id="checked" /><br>
+        <div class="date-time">
+          <input  type="date" class="date" id="date" disabled />
+          <input type="time" class="time" id="time" disabled /><br />
+          <p class="error" id="error3">Please Enter Date and Time</p>
+        </div> -->
+
+        <div class="button">
+          <button onclick="getData()">Calculate</button>
+        </div>
+
+        <h3 class="result" id="result"></h3>
+      </div>
+    </div>
+  </div>
+
+  <script src="App.js" charset="utf-8"></script>
+</body>
+
+</html>
