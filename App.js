@@ -29,8 +29,7 @@ list.insertAdjacentHTML("afterbegin", firstCountry);
 
 
 const fetchData = async (input1) => {
-    const data = await fetch("http://api.timezonedb.com/v2.1/list-time-zone?key=SXH1UBEFL3QP&format=json");
-    // 
+    const data = await fetch("https://api.timezonedb.com/v2.1/list-time-zone?key=SXH1UBEFL3QP&format=json");
     const a = await data.json();
     const arr = a.zones;
     return final = arr.filter((element) => {
@@ -41,7 +40,7 @@ const fetchData = async (input1) => {
 }
 
 const singleData = async (input1, input2) => {
-    const data = await fetch("http://api.timezonedb.com/v2.1/list-time-zone?key=SXH1UBEFL3QP&format=json");
+    const data = await fetch("https://api.timezonedb.com/v2.1/list-time-zone?key=SXH1UBEFL3QP&format=json");
     const a = await data.json();
     const arr = a.zones;
 
@@ -125,7 +124,7 @@ function getData() {
     }
 
     if (timeZone1.length == 1 && timeZone2.length == 1 && timeZone1[0].countryName === timeZone2[0].countryName) {
-        result.innerHTML = `OOPS, Both zone are same So there is a <span class="key">No time differnce</span> 😑`
+        result.innerHTML = `OOPS, Both zone are same So there is a <span class="key">No time differnce</span>`
         return;
     }
 
