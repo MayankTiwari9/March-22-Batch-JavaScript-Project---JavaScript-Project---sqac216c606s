@@ -53,7 +53,7 @@ const singleData = async (input1, input2) => {
 
 const withoutChecked = async (ans1, ans2, time) => {
 
-    let f = `https://api.timezonedb.com/v2.1/convert-time-zone?key=SXH1UBEFL3QP&format=json&from=${ans1}&to=${ans2}&time=${time}`;
+    let f = `http://api.timezonedb.com/v2.1/convert-time-zone?key=SXH1UBEFL3QP&format=json&from=${ans1}&to=${ans2}&time=${time}`;
     //      
     let a = await fetch(f)
     const data = await a.json();
